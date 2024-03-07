@@ -1,10 +1,13 @@
 """
 Passo a Passo do projeto:
 Passo 1: Entrar no sistema da empresa:
-    1. abrir o navegador (chrome)
-    2. entrar no site
+    1. Abrir o navegador (chrome)
+    2. Entrar no site
 
 Passo 2: fazer login
+    1. Escrever o e-mail
+    2. Escrever a senha
+    3. Clicar no botão de Logar
 
 Passo 3: Importar a base de dados
 
@@ -30,5 +33,17 @@ pyautogui.press("enter")
 # Pausa para carregamento do site
 time.sleep(3)
 
-# Passo 2
+# Passo 2: 1/3
 pyautogui.click(x=-1240, y=379)
+pyautogui.write("pythonimpressionador@gmail.com")
+
+# Passo 2: 2/3
+pyautogui.press("tab")
+pyautogui.write("sua senha aqui")
+
+# Passo 2: 3/3
+pyautogui.click(x=-979, y=532)
+time.sleep(3)
+
+# Passo 3:
+
