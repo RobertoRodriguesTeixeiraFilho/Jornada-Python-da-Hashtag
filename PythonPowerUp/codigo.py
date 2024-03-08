@@ -28,6 +28,7 @@ Passo 5: Repetir o processo de cadastro até acabar a base de dados
 """
 import time
 import pyautogui
+import pandas
 
 pyautogui.PAUSE = 1.2
 
@@ -57,7 +58,6 @@ pyautogui.click(x=-979, y=532)
 time.sleep(3)
 
 # Passo 3:
-import pandas
 tabela = pandas.read_csv("produtos.csv")
 
 # Passo 4:
@@ -95,7 +95,7 @@ for linha in tabela.index:
     if not pandas.isna(obs):
         pyautogui.write(obs)
     pyautogui.press("tab")
-    
+
     # Passo 4: 3/3
     pyautogui.press("enter")
     pyautogui.scroll(5000)
