@@ -58,7 +58,7 @@ pyautogui.click(x=-979, y=532)
 time.sleep(3)
 
 # Passo 3:
-tabela = pandas.read_csv("produtos.csv")
+tabela = pandas.read_csv(r"PythonPowerUp\produtos.csv")
 
 # Passo 4:
 for linha in tabela.index:
